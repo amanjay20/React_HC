@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 
 function Github() {
@@ -22,6 +22,7 @@ function Github() {
 
 export default Github
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const githubInfoLoader = async () => {
     const response = await fetch('https://api.github.com/users/hiteshchoudhary')
     return response.json()
